@@ -71,7 +71,6 @@ def add():
     CSV.add_entry(date,amount,category,description)
 
 def plot_transactions(df):
-    ef plot_transactions(df):
     df.set_index('date',inplace=True)
     income_df = df[df["category"] == "Income"].resample("D").sum().reindex(df.index,fill_value=0)
     expense_df = df[df["category"] == "Expense"].resample("D").sum().reindex(df.index,fill_value=0)
