@@ -2,13 +2,9 @@
 
 A simple Python CLI tool to track income and expenses, store them in CSV, and visualize financial trends.
 
----
-
 ## 💰 Personal Finance Tracker (Command Line)
 
 This is a simple **command-line Python application** to help you **track income and expenses**, store them in a CSV file, and view summaries within custom date ranges.
-
----
 
 ## 📦 Features
 
@@ -17,8 +13,6 @@ This is a simple **command-line Python application** to help you **track income 
 - View transactions within a date range  
 - Summary of total income, expenses, and savings  
 - Optional visualization of trends using Matplotlib  
-
----
 
 ## 🛠️ Requirements
 
@@ -29,47 +23,57 @@ This is a simple **command-line Python application** to help you **track income 
 
 Install dependencies with:
 
-```bash
 pip install pandas matplotlib
-
-##▶️ How to Run
-Run the application from terminal or command prompt:
-python main.py
 
 Follow the menu:
 
-1.Add a transaction
+- Add a transaction  
+- View transactions in a date range  
+- Exit  
 
-2.View transactions in a date range         
-
-3.Exit
-
-##📁 Project Structure
+## 📁 Project Structure
 
 finance-tracker/
-├── main.py              # Main program with logic and summary
-├── data_entry.py        # Handles user inputs and validation
-├── finanace_data.csv    # Stores all transaction data
-└── README.md            # Project documentation
+├── main.py # Main program with logic and summary
+├── data_entry.py # Handles user inputs and validation
+├── finanace_data.csv # Stores all transaction data
+└── README.md # Project documentation
 
-##📝 Data Format (CSV)
+
+## 📝 Data Format (CSV)
 
 Each transaction is stored with the following fields:
-1.date – Format: dd-mm-yyyy
-2.amount – Positive float
-3.category – "Income" or "Expense"
-4.description – Optional
 
-##🧠 Example Use Case
+- `date` – Format: `dd-mm-yyyy`  
+- `amount` – Positive float  
+- `category` – "Income" or "Expense"  
+- `description` – Optional  
+
+## 🧠 Example Use Case
+
 Track daily income and expenses like:
-Salary, freelance income
-Food, shopping, transport
-Automatically generate savings summaries
 
-##📊 Plot Preview
-plot.png
+- Salary, freelance income  
+- Food, shopping, transport  
+- Automatically generate savings summaries  
+
+## 📊 Plot Preview
+
+Example:
+
+![Income vs Expenses](plot.png)
 
 
 
+## 🚀 Future Ideas
 
+- Category filters (e.g., only food, bills)  
+- Monthly / yearly statistics  
+- Export as PDF or Excel  
+- Convert to GUI or web app  
+
+## 🙌 Author
+
+Built with ❤️ by **Aditya**  
+Feel free to fork, use, or contribute to this project.
 
